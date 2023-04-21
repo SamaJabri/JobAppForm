@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-image: url('pexels-stephan-seeber-1261728.jpg');
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(80%);
+    padding: 4rem 0;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    transition: all 0.3s;
+}
+
+.form {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.7rem;
+    color: white;
+    width: 100%;
+}
+
+.form__input input {
+    width: 100%;
+    padding: 0.7rem 1.3rem;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 0.2rem;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.form__button {
+    width: 80%;
+    height: 4rem;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    color: white;
+    background-color: #a67263;
+    transition: all 0.3s;
+}
+
+.form__button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #a67263;
+}
+
+@media (min-width: 500px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .form {
+        width: 37rem;
+    }
+
+    .form__input input {
+        padding: 1rem 1.3rem;
+        font-size: 1.6rem;
+    }
+}
