@@ -21,7 +21,7 @@
 
 .header {
     width: 100%;
-    height: 6rem;
+    height: 5rem;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -34,7 +34,7 @@
 }
 
 .header p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -84,10 +84,8 @@
     transition: all 0.3s;
 }
 
-input[type="date"] {
-    display: block;
-    -webkit-appearance: textfield;
-    -moz-appearance: textfield;
+input [type="date"] {
+    min-width: 95%;
 }
 
 .form__button {
@@ -110,6 +108,15 @@ input[type="date"] {
 }
 
 @media (min-width: 500px) {
+    .header {
+        width: 100%;
+        height: 6rem;
+    }
+
+    .header p {
+        font-size: 2rem;
+    }
+
     .title {
         font-size: 4rem;
     }
